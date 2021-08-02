@@ -1,6 +1,13 @@
 const express = require("express");
+const mongoose = require('mongoose');
 const articleRouter = require('./routes/articles')
 const app = express();
+
+mongoose.connect('mongodb://localhost/blog' , {useNewUrlParser: true, useUnifiedTopology: true},()=>{
+    new Promise((resolve, reject) => {
+        reject('error');
+      }).catch((error) => {});
+});          // blog is name of our database
 
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
