@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// schema for DB to save blog in key value format
 const articleSchema = new mongoose.Schema({
     title: {
         type: String,
