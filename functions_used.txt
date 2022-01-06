@@ -1,0 +1,20 @@
+require
+app.get()
+app.set('view engine', 'ejs')
+app.listen()
+
+express.Router()
+router.get()
+include('file_name')
+res.render()
+
+
+libraries:
+node
+express
+marked
+slugify
+method-override
+mongoose
+jsdom
+dompurify
